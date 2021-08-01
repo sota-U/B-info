@@ -1,0 +1,63 @@
+@keyframes fadeIn {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+.login-form {
+  background-image: url("kobe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0 150px 0;
+  
+}
+.page-name {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  padding: 0 0 30px 0;
+  animation-name: fadeIn ;
+  animation-duration: 1s;
+}
+.field {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  animation-name: fadeIn ;
+  animation-duration: 0.5s;
+}
+
+.check-box {
+  transform: scale(1.9);
+}
+
+.login-btn {
+  font-family: Teko;
+  display: inline-block;
+  font-size: 80pt;
+  padding: 10px 70px;
+  text-decoration: none;
+  border-radius: 10%;
+  color: black;
+  background-image: linear-gradient(45deg, #961010 0%, #df15bd 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #f3eeeb;
+  animation-name: fadeIn ;
+  animation-duration: 1.4s;
+}
+
+.login-btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  
+}
+.actions {
+  padding: 100px;
+  text-align: center;
+}
+
