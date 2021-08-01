@@ -1,1 +1,20 @@
-<div>youso</div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+</style>
+
+
+<%= render "shared/header"%>
+<div class="main">
+  <div class="content">
+    <div class="list">
+     contents
+    </div>
+    <ul class="tweet-contents">
+      <% if @tweet.present?%>
+      <% @tweet.each do |tweet| %>
+      
+      <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>

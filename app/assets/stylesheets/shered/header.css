@@ -1,0 +1,37 @@
+
+
+
+.top-page-header {
+  width: 100%;
+  padding: 30px 4% 10px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(red, green, blue, alpha);
+  display: flex;
+  align-items: center;
+  font-family: Teko;
+}
+h1 {
+  margin: 0;padding: 0;
+  font-size: 35px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+li {
+  margin: 0 0 0 15px;
+  font-size: 25px;
+}
+nav{
+  margin: 0 0 0 auto;
+}
+
+.fa-basketball-ball {
+  color: aliceblue;
+}
