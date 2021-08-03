@@ -2,15 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 </style>
 
-
-<%= render "shared/header"%>
-<div class="main">
-  <div class="list-name">
-    -contents-
+<div class="show-main">
+  <div class="user-maininfo">
+    <div class="info-title">
+      :USERINFO::
+    </div>
+    <div class="user-edit">
+      <%= link_to '<<EDIT>>', edit_user_path(@user.id), class: 'edit' %>
+    </div>
+    <div class="user-nickname">
+      <div>-name</div>
+      <%= "#{@user.nickname}"%>
+    </div>
+    <div class="user-birthday">
+      <div>-BIRTHDAY</div>
+      <%= "#{current_user.birthday}"%>
+    </div>
   </div>
-  <div class="content">
-    <ul class="tweet-list">
-      <% @tweet.each do |tweet|%>
+  <div class="user-tweets">
+    <div class="user-contents-title">
+      -contents-
+    </div>
+    <ul class="user-tweet-list">
+      <% @tweets.each do |tweet|%>
         <li class="list">
           <div class="tweet-info">
             <div class="tweet-title">
@@ -26,13 +40,13 @@
           </div>
           <div class="tweet-user-name">
             <div class="user-name">
-            <%= link_to ":from#{tweet.user.nickname}:", user_path(tweet.user_id), class: "user-show"%>
+            <%= "from :#{tweet.user.nickname}:" %>
             </div>
           </div>
         </li>
       <% end %>
     </ul>
-  </div>
-</div>
-      
+  <div>
 
+
+</div>

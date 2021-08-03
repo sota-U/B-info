@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 
 
 .top-page-header {
@@ -35,3 +37,4 @@ nav{
 .fa-basketball-ball {
   color: aliceblue;
 }
+

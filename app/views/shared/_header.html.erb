@@ -1,19 +1,20 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class='top-page-header'>
-<script src="https://kit.fontawesome.com/26f6519548.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/26f6519548.js" crossorigin="anonymous"></script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
-</style>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+  </style>
 
-  <h1>
+  <h1 class="app-title">
     <a href="/">B-info</a>
   </h1>
   <nav class="pc-nav">
    <ul class='lists-right'>
       <% if user_signed_in? %>
-        <li><%= link_to 'USERINFO', "#", class: "show"%></li>
+        <li><%= link_to "#{current_user.nickname}=USERINFO", user_path(current_user.id), class: "show"%></li>
         <li><%= link_to 'LOGOUT', destroy_user_session_path, method: :DELETE, class: "logout" %></li> 
+        <li><%= link_to 'POST', new_tweet_path, class: '' %></li>
       <% else %>
         <li>
         <%= link_to 'LOGIN', new_user_session_path, class: "login" %>
