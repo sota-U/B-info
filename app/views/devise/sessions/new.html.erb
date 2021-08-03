@@ -7,18 +7,21 @@
 
 <div class="login-form">
   <div class="page-name">
-    <h2>LOGIN</h2>
+    <span>LOGIN</span>
   </div>
 
-  <%= render 'shared/error_messages2', model: f.object %>
+  <div class='login-flash-message'>
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+  </div>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="field">
+    <div class="email-field">
       <%= f.label :email %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
     </div>
 
-    <div class="field">
+    <div class="pass-field">
       <%= f.label :password %><br />
       <%= f.password_field :password, autocomplete: "current-password" %>
     </div>

@@ -1,0 +1,38 @@
+<%= form_with model: @user, url: user_path(@user.id), class: 'registration-main', local: true do |f| %>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+</style>
+
+<div class='form-wrap'>
+  <div class='form-header'>
+    <h1 class='form-header-text'>
+      [Please enter your membership information!!!]
+      
+    </h1>
+  </div>
+  <div class='header-caution'>
+  <h4 class='form-header-caution'>
+      ※Please fill in all the information
+    </h4>
+  </div>
+
+  <%= render 'shared/error_messages', model: f.object %>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <div>
+        <label class="form-text">NICKNAME</label>
+      </div>
+    </div>
+    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例: CP3", maxlength:"40" %>
+  </div>
+  
+  <div class='register-btn'>
+    <%= f.submit "ENTRY" ,class:"register-red-btn" %>
+  </div>
+  
+</div>
+
+<% end %>
+

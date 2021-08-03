@@ -16,18 +16,11 @@
 }
 .page-name {
   text-align: center;
-  font-size: 70px;
+  font-size: 100px;
   color: white;
-  padding: 0 0 30px 0;
   animation-name: fadeIn ;
   animation-duration: 1s;
-}
-.field {
-  text-align: center;
-  font-size: 80px;
-  color: white;
-  animation-name: fadeIn ;
-  animation-duration: 0.5s;
+  padding: 0 0 50px 0;
 }
 
 .check-box {
@@ -61,3 +54,24 @@
   text-align: center;
 }
 
+.login-flash-message {
+  color: #961010;
+  text-align: center;
+  font-size: 39px;
+}
+
+.email-field {
+  padding: 40px 0 0 0;
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  animation-name: fadeIn ;
+  animation-duration: 0.5s;
+}
+ .pass-field {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  animation-name: fadeIn ;
+  animation-duration: 0.5s;
+}

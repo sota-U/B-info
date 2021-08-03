@@ -12,6 +12,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :last_name_reading,  null: false, default: ""
       t.string :first_name_reading, null: false, default: ""
       t.date :birthday,             null: false 
+      t.text :profile
 
       ## Recoverable
       t.string   :reset_password_token
