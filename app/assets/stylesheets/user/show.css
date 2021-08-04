@@ -14,15 +14,18 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   overflow-y: scroll; 
   background-attachment: fixed;
   padding-bottom: 400px;
+
 }
 
 .user-maininfo {
   line-height: 1.6;
   padding: 30px 4% 10px;
+  position: fixed;
+  
 }
 
 .info-title {
@@ -53,30 +56,39 @@
   animation-name: fadeIn;
   animation-duration: 4s;
 }
-.user-nickname {
+.user-info {
   line-height: 1.6;
   color: aliceblue;
   font-size: 40px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  animation-name: fadeIn;
+  animation-duration: 7s;
+}
+.userprofile-info {
+  line-height: 1.6;
+  color: aliceblue;
+  font-size: 20px;
   padding-left: 50px;
   text-align: left;
   padding-bottom: 30px;
   animation-name: fadeIn;
   animation-duration: 7s;
+  width: 400px;
+  white-space: pre-wrap;
+
 }
 
-.user-birthday {
+.user-maininfo-damy {
   line-height: 1.6;
-  color: white;
-  font-size: 40px;
-  padding-left: 50px;
-  text-align: left;
-  animation-name: fadeIn;
-  animation-duration: 10s;
+  padding: 30px 50px 10px;
 }
 
 .user-tweets {
   height: auto;
   width: 100%;
+  margin: 0 0 0 400px;
+
 }
 
 .user-contents-title {
@@ -93,4 +105,21 @@
   padding-right: 60px;
   animation-name: fadeIn;
   animation-duration: 12s;
+}
+
+.showtweet-title {
+  font-size: 40px;
+  line-height: 1.6;
+    margin: 120px 0 40px;
+    background: -webkit-linear-gradient(
+30deg
+,#0748ee,#e98f1a,#f12d06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.showimages {
+  height: auto;
+  width: 100%;
 }

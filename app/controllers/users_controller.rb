@@ -5,6 +5,11 @@ class UsersController < ApplicationController
     @tweets = @user.tweets.order(created_at: :DESC)
   end
   def edit
+    if @user == current_user
+      render "edit"
+    else
+      redirect_to root_path
+    end
   end
 
   def update
@@ -13,6 +18,10 @@ class UsersController < ApplicationController
     else
       render  :edit
     end 
+  end
+
+  def destroy
+
   end
  
 
@@ -23,6 +32,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:nickname,:profile,:birthday).merge(id: params[:id])
+    params.require(:user).permit(:nickname,:profile,:birthday)
   end
 end
