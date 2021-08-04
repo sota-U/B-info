@@ -1,12 +1,13 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!, only: [:edit, :update]
-  before_action :set_user, only:[:show, :edit, :update]
+  before_action :set_user, only: [:show, :edit, :update]
   def show
     @tweets = @user.tweets.order(created_at: :DESC)
   end
+
   def edit
     if @user == current_user
-      render "edit"
+      render 'edit'
     else
       redirect_to root_path
     end
@@ -16,14 +17,12 @@ class UsersController < ApplicationController
     if @user.update(user_params)
       redirect_to user_path(@user.id)
     else
-      render  :edit
-    end 
+      render :edit
+    end
   end
 
   def destroy
-
   end
- 
 
   private
 
@@ -32,6 +31,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:nickname,:profile,:birthday)
+    params.require(:user).permit(:nickname, :profile, :birthday)
   end
 end
