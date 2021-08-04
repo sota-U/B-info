@@ -5,19 +5,28 @@
 <div class="show-main">
   <div class="user-maininfo">
     <div class="info-title">
-      :USERINFO::
+      :USERINFO:
     </div>
-    <div class="user-edit">
-      <%= link_to '<<EDIT>>', edit_user_path(@user.id), class: 'edit' %>
+    <% if @user == current_user%>
+      <div class="user-edit">
+        <%= link_to '<<EDIT>>', edit_user_path(@user.id), class: 'edit' %>
+      </div>
+    <% end %>
+    <div class=user-info-all>
+      <div class="user-info">
+      <%="NICKNAME >> $#{@user.nickname}$"%>
+      </div>
+      <div class="user-info">
+      <%= "BIRTHDAY >> $#{@user.birthday}$"%>
+      </div>
+      <div class="userprofile-info">
+      <%=@user.profile%>
+      </div>
     </div>
-    <div class="user-nickname">
-      <div>-name</div>
-      <%= "#{@user.nickname}"%>
-    </div>
-    <div class="user-birthday">
-      <div>-BIRTHDAY</div>
-      <%= "#{current_user.birthday}"%>
-    </div>
+  </div>
+  <div class="user-maininfo-damy">
+   <div>
+   </div>
   </div>
   <div class="user-tweets">
     <div class="user-contents-title">
@@ -26,20 +35,20 @@
     <ul class="user-tweet-list">
       <% @tweets.each do |tweet|%>
         <li class="list">
-          <div class="tweet-info">
-            <div class="tweet-title">
+          <div class="showtweet-info">
+            <div class="showtweet-title">
               <%= ":#{tweet.title}:" %>
             </div>
           </div>
-          <div class="tweet-image-content">
-            <div class="tweet-images">
+          <div class="showtweet-image-content">
+            <div class="showtweet-images">
               <% tweet.images.each do |image| %>
-                <%= image_tag image, :size => '800x800' ,class:'images' %>
+                <%= image_tag image, :size => '800x800' ,class:'showimages' %>
               <% end %>
             </div>
           </div>
-          <div class="tweet-user-name">
-            <div class="user-name">
+          <div class="showtweet-user-name">
+            <div class="showuser-name">
             <%= "from :#{tweet.user.nickname}:" %>
             </div>
           </div>

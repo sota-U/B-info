@@ -4,32 +4,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 </style>
 
-<div class='form-wrap'>
-  <div class='form-header'>
-    <h1 class='form-header-text'>
-      [Please enter your membership information!!!]
+<div class='editform-wrap'>
+  <div class='editform-header'>
+    <h1 class='editform-headertext'>
+      [EDIT-PAGE]
       
     </h1>
-  </div>
-  <div class='header-caution'>
-  <h4 class='form-header-caution'>
-      ※Please fill in all the information
-    </h4>
   </div>
 
   <%= render 'shared/error_messages', model: f.object %>
 
-  <div class="form-group">
-    <div class='form-text-wrap'>
+  <div class="editform-group">
+    <div class='editform-text-wrap'>
       <div>
-        <label class="form-text">NICKNAME</label>
+        <label class="editform-text">NICKNAME</label>
       </div>
     </div>
-    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例: CP3", maxlength:"40" %>
+    <%= f.text_area :nickname, class:"editinput-default", id:"edit-nickname", placeholder:"例: CP3", maxlength:"40" %>
+  </div>
+  <div class="editform-group">
+    <div class="editform-profile">
+      <div>
+        <label class="editform-text">SELF-INTRODUCTION</label>
+      </div>
+    </div>
+    <%= f.text_area :profile, class:"editinput-default"%>
   </div>
   
-  <div class='register-btn'>
-    <%= f.submit "ENTRY" ,class:"register-red-btn" %>
+  <div class='editregister-btn'>
+    <%= f.submit "ENTRY" ,class:"editregister-red-btn" %>
   </div>
   
 </div>
