@@ -1,6 +1,6 @@
 .main {
   margin: 0;
-  padding: 0 100px 150px 0;
+  padding: 70px 100px 150px 0;
   font-family: Teko;
   background-image: url('harden.gif');
   background-size: cover;
@@ -28,14 +28,22 @@
 .tweet-title {
   font-size: 70px;
   line-height: 1.6;
-  margin: 120px 0 40px;
-  color: white;
+    margin: 120px 0 40px;
+    background: -webkit-linear-gradient(
+30deg
+,#0748ee,#e98f1a,#f12d06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   text-align: center;
 }
 .user-name {
   font-size: 40px;
   line-height: 1.6;
-  color: white;
+    background: -webkit-linear-gradient(
+30deg
+,#0747e9,#e709c2,#f12d06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
