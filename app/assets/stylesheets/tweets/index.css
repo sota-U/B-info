@@ -28,22 +28,14 @@
 .tweet-title {
   font-size: 70px;
   line-height: 1.6;
-    margin: 120px 0 40px;
-    background: -webkit-linear-gradient(
-30deg
-,#0748ee,#e98f1a,#f12d06);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  margin: 120px 0 40px;
+  color: white;
   text-align: center;
 }
 .user-name {
   font-size: 40px;
   line-height: 1.6;
-    background: -webkit-linear-gradient(
-30deg
-,#0747e9,#e709c2,#f12d06);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: white;
   text-align: center;
 }
 

@@ -30,25 +30,15 @@
 
 .info-title {
   text-align: left;
-  line-height: 1.6;
-    background: -webkit-linear-gradient(
-30deg
-,#09090a,#e70909,#faf8f8f5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: red;
   padding: 30px 6% 10px;
   font-size: 70px;
   animation-name: fadeIn;
   animation-duration: 1s;
 }
 
-.user-edit {
-  line-height: 1.6;
-    background: -webkit-linear-gradient(
-30deg
-,#0747e9,#e709c2,#f12d06);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.edit {
+  color: white;
   font-size: 40px;
   padding-left: 50px;
   text-align: left;
@@ -109,13 +99,10 @@
 
 .showtweet-title {
   font-size: 40px;
+  color: white;
   line-height: 1.6;
     margin: 120px 0 40px;
-    background: -webkit-linear-gradient(
-30deg
-,#0748ee,#e98f1a,#f12d06);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   
   text-align: center;
 }
 
