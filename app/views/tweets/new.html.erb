@@ -1,37 +1,48 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+</style>
+
 <div class="tweet-post-contents">
   <div class="contents-main">
-    <p class="info">Please enter the information</p>
+    <p class="info">--Please enter the information--</p>
     <p class="attention">※Please fill in all the information<p>
     <%= form_with model: @tweet, class: 'form', local: true do |f| %>
     <%= render 'shared/error_messages', model: f.object %>
     <div class="img-upload">
       <div class="weight-bold-text">
-        IMAGE
+        :::::::::::::::::::::::::::::::::::::::::::::::::::::::::IMAGE::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       </div>
       <div class="click-upload">
-        <p>
-          Image Upload
-        </p>
-        <%= f.file_field :images, name: 'tweet[images][]', id:"tweet-image" %>
+        <label class="image-file">>>IMAGESELECT[COVER]<<<%= f.file_field :images, name: 'tweet[images][]', id:"tweet-image", class:"tweet-image-select" %></label>
         <div id="image-list"></div>
+        <label class="image-file">>>IMAGESELECT[content]<<<%= f.file_field :images, name: 'tweet[images][]', id:"tweet-image2", class:"tweet-image-select2" %></label>
+        <div id="image-list2"></div>
+        <label class="image-file">>>IMAGESELECT[content2]<<<%= f.file_field :images, name: 'tweet[images][]', id:"tweet-image3", class:"tweet-image-select3" %></label>
+        <div id="image-list3"></div>
       </div>
       <%#= image_tag @item.image, id: 'image' if @item.image.present? %> 
     </div>
     <div class="new-post">
       <div class="title">
-        TITLE
+        ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::TITLE:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       </div>
-      <%= f.text_area :title, class:"items-text", id:"tweet-title",  maxlength:"40" %>
+      <%= f.text_area :title, class:"newtweet-title", id:"tweet-title",  maxlength:"40" %>
       <div class="tweet-content">
         <div class="content-text">
-          CONTENT
+          :::::::::::::::::::::::::::::::::::::::::::::::::::::::CONTENT:::::::::::::::::::::::::::::::::::::::::::::::::::::::
         </div>
-        <%= f.text_area :text, class:"tweet-text", id:"tweet-info", rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :text, class:"newtweet-content", id:"tweet-info", rows:"7" ,maxlength:"1000" %>
       </div>
+        <div>
+          :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        </div>
     </div>
     <div class="sell-btn-contents">
-      <%= f.submit "出品する" ,class:"sell-btn" %>
-      <%=link_to 'もどる', root_path, class:"back-btn" %>
+      <div><%= f.submit "POST" ,class:"tweet-post-btn" %></div>
+      <div class="back-btn-case">
+        <div class="back-btn-position">:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</div>
+        <div class="back-btn-div"><%=link_to '>>EXIT<<', root_path, class:"back-btn" %></div>
+      </div>
     </div>
     <% end %>
   </div>

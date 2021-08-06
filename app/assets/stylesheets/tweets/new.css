@@ -1,0 +1,111 @@
+
+.tweet-post-contents {
+  background-color: black;
+  color: white;
+  font-size: 60px;
+  font-family: Teko;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.attention {
+  font-size: 20px;
+  color: yellow;
+}
+
+.tweet-image-select {
+  margin-left: 100px;
+  display: none;
+}
+
+.tweet-image-select2 {
+  margin-left: 100px;
+  display: none;
+}
+
+.tweet-image-select3 {
+  margin-left: 100px;
+  display: none;
+}
+
+
+#image-list {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+#image-list2 {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#image-list3 {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.image-file {
+  background: -webkit-linear-gradient(
+30deg
+,#ee0707,#c01ae9,#f12d06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info {
+  font-size: 45px;
+  padding: 50px;
+  margin: 0;
+}
+
+.sell-btn-contents {
+  display: block;
+}
+
+.tweet-post-btn {
+  height: 100px;
+  font-family: Teko;
+  display: inline-block;
+  font-size: 80px;
+  padding: 0 100px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.tweet-post-btn:hover {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  transition: 0.4s;
+  border-bottom: none;
+  background-color: black;
+  color: white;
+  border-bottom: solid 1px black;
+}
+
+.back-btn-div {
+  padding-bottom: 70px;
+  padding-top: 50px;
+}
+
+
+.newtweet-title {
+  width: 400px;
+  height: 50px;
+  resize: none;
+}
+
+.newtweet-content {
+  width: 500px;
+  height: 200px;
+  resize: none;
+}

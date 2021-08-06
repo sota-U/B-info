@@ -1,41 +1,50 @@
 <%= form_with model: @user, url: user_path(@user.id), class: 'registration-main', local: true do |f| %>
+<head>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+  </style>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
-</style>
-
-<div class='editform-wrap'>
-  <div class='editform-header'>
-    <h1 class='editform-headertext'>
-      [EDIT-PAGE]
-      
-    </h1>
-  </div>
-
-  <%= render 'shared/error_messages', model: f.object %>
-
-  <div class="editform-group">
-    <div class='editform-text-wrap'>
-      <div>
-        <label class="editform-text">NICKNAME</label>
+<body>
+  <script src="edit.js"></script>
+  <div class='editform-wrap'>
+    <div class='editform-header'>
+      <div class="page-logo">
+      </div>
+      <div class='editform-headertext'>
+        ::::EDIT-PAGE::::
       </div>
     </div>
-    <%= f.text_area :nickname, class:"editinput-default", id:"edit-nickname", placeholder:"例: CP3", maxlength:"40" %>
+  <div class="edit-error-message">
+    <div><%= render 'shared/error_messages3', model: f.object , class:"edit-error"%></div>
   </div>
-  <div class="editform-group">
-    <div class="editform-profile">
-      <div>
-        <label class="editform-text">SELF-INTRODUCTION</label>
+  <div class="editform-groups">
+    <div class="editform-group">
+      <div class='editform-text-wrap'>
+        <div><label class="editnameform-text">:::::::::::::NICKNAME::::::::::::::</label></div>
+         <div><%= f.text_area :nickname, class:"editinput-default", id:"edit-nickname", placeholder:"例: CP3", maxlength:"40" %></div>
       </div>
     </div>
-    <%= f.text_area :profile, class:"editinput-default"%>
-  </div>
+    <div class="editform-group">
+      <div class="editform-profile">
+        <div class="editform-text">:::::::::::::::::::PROFILE::::::::::::::::::::</div>
+        <div><%= f.text_area :profile, class:"profileinput-default"%></div>
+      </div>
+    </div>
+    <div class="editform-group">
+      <div class='editform-text-wrap'>
+        <div><label class="editnameform-text">:::::::::::::BIRTHDAY::::::::::::::</label></div>
+         <div><%= f.text_area :birthday, class:"editinput-default", id:"edit-nickname", placeholder:"2000-01-01", maxlength:"40" %></div>
+      </div>
+    </div>
+    
   
-  <div class='editregister-btn'>
-    <%= f.submit "ENTRY" ,class:"editregister-red-btn" %>
+    <div class='update-info-btn'>
+      <%= button_to "update-info", user_path(@user.id), method: :patch, class: "update-btn"%>
+    </div>
   </div>
-  
-</div>
+</body>
 
 <% end %>
 

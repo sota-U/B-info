@@ -38,3 +38,6 @@ nav{
   color: aliceblue;
 }
 
+.show:hover {
+  text-shadow: 1px 1px 1px rgb(233, 11, 203);
+}

@@ -12,14 +12,14 @@
   <nav class="pc-nav">
    <ul class='lists-right'>
       <% if user_signed_in? %>
-        <li><%= link_to "#{current_user.nickname}-USERINFO", user_path(current_user.id), class: "show"%></li>
-        <li><%= link_to 'LOGOUT', destroy_user_session_path, method: :DELETE, class: "logout" %></li> 
-        <li><%= link_to 'POST', new_tweet_path, class: '' %></li>
+        <li><div class="show"><%= link_to "#{current_user.nickname}-USERINFO", user_path(current_user.id)%></div></li>
+        <li><div class="show"><%= link_to 'LOGOUT', destroy_user_session_path, method: :DELETE, class: "logout" %></div></li> 
+        <li><div class="show"><%= link_to 'POST', new_tweet_path, class: '' %></div></li>
       <% else %>
         <li>
-        <%= link_to 'LOGIN', new_user_session_path, class: "login" %>
+        <div class="show"><%= link_to 'LOGIN', new_user_session_path, class: "login" %></div>
         </li>
-        <li><%= link_to 'SIGNUP', new_user_registration_path, class: "sign-up" %></li>
+        <div class="show"><li><%= link_to 'SIGNUP', new_user_registration_path, class: "sign-up" %></li></div>
       <% end %>
     </ul>
   </nav>

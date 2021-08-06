@@ -2,32 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 </style>
 
+
+<div class="userinfo-separate">
+  <div class="user-info-title">
+    ::USERINFO::
+  </div>
+  <div class="user-info">
+    <div class="user-nickname">
+      <%= "NICKNAME >> :#{@user.nickname}"%>
+    </div>
+    <div class="user-birthday">
+      <%= "BIRTHDAY >> :#{@user.birthday}"%>
+    </div>
+    <div class="user-profile-title">
+      :::::::::::::::::PROFILE:::::::::::::::::::
+    </div>
+    <div class="user-profile">
+      <%= @user.profile%>
+    </div>
+    <div>
+      :::::::::::::::::::::::::::::::::::::::::::::::::
+    </div>
+    <div class="user-edit-info">
+      <%= link_to '<<EDIT>>', edit_user_path(@user.id), class: 'edit' %>
+    </div>
+  </div>
+</div>
 <div class="show-main">
-  <div class="user-maininfo">
-    <div class="info-title">
-      :USERINFO:
-    </div>
-    <% if @user == current_user%>
-      <div class="user-edit">
-        <%= link_to '<<EDIT>>', edit_user_path(@user.id), class: 'edit' %>
-      </div>
-    <% end %>
-    <div class=user-info-all>
-      <div class="user-info">
-      <%="NICKNAME >> $#{@user.nickname}$"%>
-      </div>
-      <div class="user-info">
-      <%= "BIRTHDAY >> $#{@user.birthday}$"%>
-      </div>
-      <div class="userprofile-info">
-      <%=@user.profile%>
-      </div>
-    </div>
-  </div>
-  <div class="user-maininfo-damy">
-   <div>
-   </div>
-  </div>
   <div class="user-tweets">
     <div class="user-contents-title">
       -contents-

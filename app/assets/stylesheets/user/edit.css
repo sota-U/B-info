@@ -1,0 +1,90 @@
+
+
+.editform-wrap {
+  padding-bottom: 200px;
+  background-color: white;
+  background-image: url("Durant.png");
+}
+.editform-headertext {
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  font-size: 70px;
+  -webkit-text-stroke: 4px black;
+}
+
+.editnameform-text {
+  color: white;
+  font-size: 60px;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  -webkit-text-stroke: 3px black;
+
+}
+
+.editform-text {
+  color: white;
+  font-size: 50px;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  -webkit-text-stroke: 2.3px black;
+
+}
+
+.editform-group {
+  display: flex;
+  justify-content: center;
+}
+.editform-profile {
+  display: block;
+}
+
+.editinput-default {
+  width: 500px; 
+  margin-bottom: 10px; 
+  background-color: white;
+  outline: none;
+  padding: 10px;
+  font-size: 13px;
+  color: black;
+  resize: none;
+}
+
+.profileinput-default {
+  width: 500px; 
+  height: 300px;
+  margin-bottom: 10px; 
+  background-color: white;
+  outline-color: black;
+  padding: 10px;
+  font-size: 13px;
+  color: black;
+  resize: none;
+}
+
+.update-btn {
+  height: 100px;
+  font-family: Teko;
+  display: inline-block;
+  font-size: 80px;
+  margin-top: 100px;
+  margin-left: 550px;
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 2.3px black;
+  background-color: white;
+}
+
+  
+.update-btn:hover {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  transition: 0.2s;
+  border-bottom: none;
+  background-color: black;
+  color: white;
+  border-bottom: solid 1px black;
+}
+

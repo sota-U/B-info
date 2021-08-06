@@ -19,8 +19,8 @@
           </div>
           <div class="tweet-image-content">
             <div class="tweet-images">
-              <% tweet.images.each do |image| %>
-                <%= image_tag image, :size => '800x800' ,class:'images' %>
+              <% if tweet.images.count > 0 %>
+                <%= image_tag tweet.images.first, :size => '800x800' ,class:'images' %>
               <% end %>
             </div>
           </div>
