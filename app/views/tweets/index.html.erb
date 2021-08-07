@@ -14,13 +14,13 @@
         <li class="list">
           <div class="tweet-info">
             <div class="tweet-title">
-              <%= ":#{tweet.title}:" %>
+              <%= link_to ":#{tweet.title}:", tweet_path(tweet.id) %>
             </div>
           </div>
           <div class="tweet-image-content">
             <div class="tweet-images">
               <% if tweet.images.count > 0 %>
-                <%= image_tag tweet.images.first, :size => '800x800' ,class:'images' %>
+                <div class="images-view"><%= link_to image_tag(tweet.images.first,class:'images'), tweet_path(tweet.id)  %></div>
               <% end %>
             </div>
           </div>

@@ -1,0 +1,87 @@
+
+
+.swiper-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  height: 500px;
+  width: 500px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.show-image {
+  width: auto;
+  height: 800px;
+  max-width: 1400px;
+}
+
+.show-tweet {
+  background-color: black;
+  padding-bottom: 100px;
+}
+
+.content-line {
+  background: -webkit-linear-gradient(
+30deg
+,#d50ce7,#1aa8e9,#04f304);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size: 70px;
+}
+
+.show-tweet-title {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.show-tweet-title:hover{
+  text-shadow: 1px 1px 1px rgb(255, 1, 242);
+  transition: 0.4;
+}
+
+.show-tweet-text {
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  white-space: pre-line;
+  padding-bottom: 50px;
+}
+
+.tweet-show-end {
+  color: white;
+}
+
+.page-foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-edit-btn {
+  margin-right: 40px;
+  background: -webkit-linear-gradient(
+30deg
+,#ea00ff,#e91a1a,#0414f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ font-size: 20px;
+}
+.tweet-edit-btn:hover {
+  text-shadow: 1px 1px 1px rgb(217, 255, 1);
+  transition: 0.4;
+}
+
+.tweetback-btn-div {
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.tweetback-btn-div:hover {
+  text-shadow: 1px 1px 1px rgb(217, 255, 1);
+}
