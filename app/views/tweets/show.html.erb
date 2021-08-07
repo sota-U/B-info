@@ -1,0 +1,67 @@
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+</style>
+
+ 
+<div class="show-tweet"> 
+  <div class="content-line">
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  </div>
+  <div class="show-tweet-contents">
+    <div class="show-tweet-title">
+      <%= ">>#{@tweet.title}<<"%>
+    </div>
+  </div>
+  <div class="content-line">
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <% unless @tweet.images.first == nil %>
+      <div class="swiper-slide"><%= image_tag @tweet.images.first , class:"show-image"%></div>
+    <% end %>
+    <% unless @tweet.images.second == nil%>
+      <div class="swiper-slide"><%= image_tag @tweet.images.second, class:"show-image"%></div>
+    <% end %>
+    <% unless @tweet.images.third == nil%>
+      <div class="swiper-slide"><%= image_tag @tweet.images.third, class:"show-image"%></div>
+    <% end %>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <div class="content-line">
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  </div>
+  <div class="show-tweet-contents">
+    <div class="show-tweet-text">
+      <%= @tweet.text%>
+    </div>
+  </div>
+  <div class="content-line">
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  </div>
+  <div class="page-foot">
+    <div class="tweet-show-end">
+    <%= "B-info from:#{@tweet.user.nickname}"%>
+    
+    </div>
+    <div>
+      <% if current_user.id == @tweet.user_id%>
+        <div class="tweet-edit-btn">
+        <%= link_to "<<EDIT>>", edit_tweet_path(@tweet.id), class: "tweet-edit-link"%>
+        </div>
+      <% end %>
+      <div class="tweetback-btn-div"><%=link_to '>>EXIT<<', root_path, class:"user-back-btn" %></div>
+    </div>
+  </div>
+  
+</div>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		}
+	});
+</script>

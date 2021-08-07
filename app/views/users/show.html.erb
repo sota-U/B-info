@@ -14,6 +14,14 @@
     <div class="user-birthday">
       <%= "BIRTHDAY >> :#{@user.birthday}"%>
     </div>
+    <div class="showbtn-flex">
+    <% if current_user.id == @user.id %>
+      <div class="user-edit-info">
+        <%= link_to '<<EDIT>>', edit_user_path(@user.id), class: 'edit' %>
+      </div>
+    <% end %>
+      <div class="userback-btn-div"><%=link_to '>>EXIT<<', root_path, class:"user-back-btn" %></div>
+    </div>
     <div class="user-profile-title">
       :::::::::::::::::PROFILE:::::::::::::::::::
     </div>
@@ -23,12 +31,13 @@
     <div>
       :::::::::::::::::::::::::::::::::::::::::::::::::
     </div>
-    <div class="user-edit-info">
-      <%= link_to '<<EDIT>>', edit_user_path(@user.id), class: 'edit' %>
-    </div>
+   
   </div>
 </div>
+
 <div class="show-main">
+  <div class="user-profile-damy">
+  </div>
   <div class="user-tweets">
     <div class="user-contents-title">
       -contents-
@@ -38,13 +47,13 @@
         <li class="list">
           <div class="showtweet-info">
             <div class="showtweet-title">
-              <%= ":#{tweet.title}:" %>
+              <%= link_to ":#{tweet.title}:", tweet_path(tweet.id) %>
             </div>
           </div>
           <div class="showtweet-image-content">
             <div class="showtweet-images">
-              <% tweet.images.each do |image| %>
-                <%= image_tag image, :size => '800x800' ,class:'showimages' %>
+              <% if tweet.images.count > 0  %>
+                <div><%= link_to image_tag(tweet.images.first, :size => '800x800' ,class:'showimages'), tweet_path(tweet.id)  %></div>
               <% end %>
             </div>
           </div>

@@ -16,8 +16,10 @@
   display: flex;
   justify-content: space-between;
   overflow-y: scroll; 
-  padding-bottom: 1000px;
+  padding-bottom: 200px;
 }
+
+
 
 .user-info-title {
   line-height: 1.6;
@@ -28,15 +30,15 @@
     -webkit-text-fill-color: transparent;
   padding: 50px 0 0 100px;
   font-size: 70px;
-  position: absolute;
-  overflow-y: auto;
+  position: fixed;
+  height: auto;
 }
 
 .user-info {
   padding: 200px 0 0 100px;
   color: white;
   font-size: 40px;
-  position: absolute;
+  position: fixed;
   height: auto;
   width: 480px;
 }
@@ -57,9 +59,13 @@
 
 }
 
+.showbtn-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .user-edit-info {
   font-size: 25px;
-  padding-left: 280px;
   background: -webkit-linear-gradient(
     30deg
     ,#6450bd,#89eb09,#f106f1);
@@ -89,7 +95,7 @@
   font-size: 60px;
   padding-top: 74px;
   animation-name: fadeIn;
-  animation-duration: 5s;
+  animation-duration: 2s;
   padding-right: 15px;
 }
 
@@ -97,7 +103,7 @@
   overflow-y: scroll; 
   padding-right: 60px;
   animation-name: fadeIn;
-  animation-duration: 8s;
+  animation-duration: 4s;
 }
 
 .showtweet-title {
@@ -108,7 +114,34 @@
   text-align: center;
 }
 
-.showimages {
-  height: auto;
-  width: 100%;
+
+.showtweet-images {
+  display: flex;
+  justify-content: center;
 }
+
+
+.userback-btn-div {
+  font-size: 25px;
+  background: -webkit-linear-gradient(
+    30deg
+    ,#3104fa,#eb0909,#f106f1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+  padding-right: 10px;
+}
+
+.userback-btn-div:hover {
+  text-shadow: 0.4px 0.4px 1px rgb(238, 255, 0);
+  transition: 0.4;
+}
+.user-edit-info:hover {
+  text-shadow: 0.4px 0.4px 1px rgb(233, 11, 203);
+  transition: .4s;
+}
+
+.user-profile-damy {
+  position: fixed;
+  padding: 200px 0 0 100px;
+}
+
