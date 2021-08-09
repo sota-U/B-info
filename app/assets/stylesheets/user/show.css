@@ -41,6 +41,7 @@
   position: fixed;
   height: auto;
   width: 480px;
+  overflow-y: scroll; 
 }
 
 .user-nickname {
@@ -100,7 +101,6 @@
 }
 
 .user-tweet-list {
-  overflow-y: scroll; 
   padding-right: 60px;
   animation-name: fadeIn;
   animation-duration: 4s;

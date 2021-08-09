@@ -53,7 +53,9 @@
         </div>
       <% end %>
       <div class="tweetback-btn-div"><%=link_to '>>EXIT<<', root_path, class:"user-back-btn" %></div>
+      <% if current_user.id == @tweet.user_id%>
       <div class="tweetdelete-btn-div"><%= link_to '>>DELETE<<', tweet_path(@tweet.id), method: :DELETE, data: { confirm: '削除しますか？' } %></div>
+      <% end %>
     </div>
   </div>
 </div>

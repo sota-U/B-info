@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 </style>
 
-
+<% if current_user.id == @user.id%>
 <div class="user-info-delete-view">
   <div class="delete-user-infotitle">
     <%= "::::::::::::::::::::::::::::::::::::::::::::::::::<!>Do you really want to delete your account?<!>:::::::::::::::::::::::::::::::::::::::::::::::::::::::"%>
@@ -43,5 +43,5 @@
   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   </div>
     <div class="userback-btn-div"><%=link_to '>>EXIT<<', root_path, class:"user-back-btn" %></div>
-
 </div>
+<% end %>
