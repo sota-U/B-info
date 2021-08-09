@@ -43,6 +43,15 @@
     <div class='update-info-btn'>
       <%= button_to "update-info", user_path(@user.id), method: :patch, class: "update-btn"%>
     </div>
+    <div class="chain">
+    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    </div>
+    <div class='user-account-destroy'>
+      <%= link_to "<<ACCOUNT-DELETE>>", check_user_path(@user.id), method: :get%>
+    </div>
+    <div class="chain">
+    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    </div>
   </div>
 </body>
 

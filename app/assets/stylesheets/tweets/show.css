@@ -4,16 +4,18 @@
   background-color: black;
   display: flex;
   justify-content: center;
+  width: 1400px;
 }
 
 .swiper-wrapper {
   height: 500px;
-  width: 500px;
+  width: 1450px;
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .show-image {
   width: auto;

@@ -17,6 +17,6 @@ class User < ApplicationRecord
             format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i,
                       message: 'It is invalid. Enter mixture half-width alphanumeric characters.' }, on: :create
 
-  has_many :tweets
-  has_many_attached :images
+  has_many :tweets, :dependent => :destroy
+  has_many_attached :images, :dependent => :destroy
 end

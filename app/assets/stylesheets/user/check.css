@@ -1,0 +1,60 @@
+.user-info-delete-view {
+  background-color: yellow;
+  background-image: url("animation.gif");
+  padding-bottom: 250px;
+}
+
+.delete-user-infotitle {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 50px;
+  color: red;
+}
+
+.deleteuserinfotitle {
+  font-size: 40px;
+  text-align: center;
+  color: #ff0000;
+}
+
+.delete-user-info-all {
+  display: flex;
+  font-size: 30px;
+  margin-left: 350px;
+  color: #ff0000;
+}
+
+.delete-user-info-main {
+  margin-right: 100px;
+}
+
+.delete-user-name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.delete-user-profile {
+  font-size: 20px;
+  margin-right: 200px;
+  white-space: pre-line;
+  font-weight: bold;
+}
+
+.delete-user-info-end {
+  font-size: 40.1px;
+  color: #ff0000;
+}
+
+.userdelete-btn-div {
+  text-align: center;
+  font-size: 30px;
+  background: -webkit-linear-gradient(
+30deg
+,#ea00ff,#e91a1a,#0414f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.userdelete-btn-div:hover {
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}

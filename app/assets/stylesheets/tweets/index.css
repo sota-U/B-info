@@ -6,6 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 1450px;
 }
 
 .content {
@@ -14,6 +15,8 @@
   padding: 0 40px;
   animation-name: fadeIn ;
   animation-duration: 1.4s;
+  width: 100%;
+  height: auto;
 }
 .list-name {
   font-size: 70px;
@@ -55,7 +58,7 @@
 .images {
   height: 800px;
   width: auto;
-  max-width: 1200px;
+  max-width: 100%;
   min-width: 700px;
 }
 

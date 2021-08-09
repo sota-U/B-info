@@ -1,0 +1,47 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+</style>
+
+
+<div class="user-info-delete-view">
+  <div class="delete-user-infotitle">
+    <%= "::::::::::::::::::::::::::::::::::::::::::::::::::<!>Do you really want to delete your account?<!>:::::::::::::::::::::::::::::::::::::::::::::::::::::::"%>
+  </div>
+  <div class="deleteuserinfotitle"><%= "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::Your User Information::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"%></div>
+  <div class="delete-user-info-all">
+    <div class="delete-user-info-main">
+      <div class="delete-user-info-title">
+        :::::::::YOUR INFO:::::::::
+      </div>
+      <div><%= ":#{@user.email}"%></div>
+      <div><%= ":#{@user.nickname}"%></div>
+      <div class="delete-user-name"><%= ":#{@user.last_name}#{@user.first_name}"%></div>
+      <div class="delete-user-name"><%= ":#{@user.last_name_reading}#{@user.first_name_reading}"%></div>
+      <div><%= ":#{@user.birthday}"%></div>
+      <div class="delete-user-info-title">
+        ::::::::::::::::::::::::::::::::::::
+      </div>
+    </div>
+    <div class="profile-position">
+      <div class="delete-user-profile-title">
+        :::::::::YOUR PROFILE::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      </div>
+      <div class="delete-user-profile"><%= ":#{@user.profile}"%></div>
+      <div class="delete-user-profile-title">
+        ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      </div>
+    </div>
+  </div>
+  <div class="delete-user-info-end">
+  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  </div>
+  <div class="userdelete-btn-div"><%= link_to '>>DELETE<<', user_path(@user.id), method: :DELETE, data: { confirm: '<!>本当にアカウントを削除しますか？<!>' }%></div>
+  <div class="delete-user-info-end">
+  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  </div>
+  <div class="delete-user-info-end">
+  :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  </div>
+    <div class="userback-btn-div"><%=link_to '>>EXIT<<', root_path, class:"user-back-btn" %></div>
+
+</div>
