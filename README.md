@@ -1,103 +1,19 @@
 # README
 
-# テーブル設計
+## アプリケーション名  : **B-info**
+: ”B”はBasketBallの頭文字を取り、バスケットボールに関する情報を取り扱うwebアプリケーションとなっています。
+## アプリケーション概要
+: バスケットボールプレイヤーに簡単にさまざまな情報を手に入れる、また情報を発信していく機会を持ってもらうためのアプリケーションになっています。
 
-## usersテーブル
+ユーザーは新規登録を行うだけで全ての機能を利用してもらえます。バスケットボールに関するニュースを取り上げた投稿やスキルに関する投稿など行うことが出来ます。
 
-| Column             | Type   | Options                   |
-| ------------------ | ------ | ------------------------- |
-| nickname           | string | null: false               |
-| email              | string | null: false, unique: true |
-| encrypted_password | string | null: false               |
-| last_name          | string | null: false               |
-| first_name         | string | null: false               |
-| last_name_reading  | string | null: false               |
-| first_name_reading | string | null: false               |
-| birthday           | date   | null: false               |
+これからいいね機能やフォロー機能を作成することで投稿する側にメリットを作っていきたいです。
+
+## 本番環境のURL
+heroku : https://b-info.herokuapp.com/ 
 
 
 
-### Association
-
-- has_many :tweets
-- has_many :comments
-- has_many :rooms
-- has_many :room_users
-- has_many :messages
 
 
-## tweetsテーブル
 
-| Column             | Type       | Options                        |
-| ------------------ | ---------- | ------------------------------ |
-| title              | string     | null: false                    |
-| text               | text       | null: false                    |
-| user               | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- has_many :comments
-- has_one_attached :image
-
-## likesテーブル
-
-| Column             | Type       | Options                        |
-| ------------------ | ---------- | ------------------------------ |
-| user               | references | null: false, foreign_key: true |
-| tweet              | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- belongs_to :tweets
-
-## commentsテーブル
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| text   | text       | null: false                    |
-| user   | references | null: false, foreign_key: true |
-| item   | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- belongs_to :tweet
-
-
-## rooms テーブル
-
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| name   | string | null: false |
-
-### Association
-
-- has_many :room_users
-- has_many :users, through: :room_users
-- has_many :messages
-
-## room_users テーブル
-
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| room   | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :room
-- belongs_to :user
-
-## messages テーブル
-
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| content | string     |                                |
-| user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :room
-- belongs_to :user
