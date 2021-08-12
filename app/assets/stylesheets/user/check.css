@@ -1,6 +1,5 @@
 .user-info-delete-view {
-  background-color: yellow;
-  background-image: url("animation.gif");
+  background-image: url('redblack.gif');
   padding-bottom: 250px;
 }
 
@@ -14,14 +13,14 @@
 .deleteuserinfotitle {
   font-size: 40px;
   text-align: center;
-  color: #ff0000;
+  color: red;
 }
 
 .delete-user-info-all {
   display: flex;
   font-size: 30px;
   margin-left: 350px;
-  color: #ff0000;
+  color: red;
 }
 
 .delete-user-info-main {
@@ -42,7 +41,7 @@
 
 .delete-user-info-end {
   font-size: 40.1px;
-  color: #ff0000;
+  color: red;
 }
 
 .userdelete-btn-div {
@@ -50,11 +49,29 @@
   font-size: 30px;
   background: -webkit-linear-gradient(
 30deg
-,#ea00ff,#e91a1a,#0414f3);
+,#ea00ff,#ff0000,#0414f3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .userdelete-btn-div:hover {
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  text-shadow: 0.1px 0.1px 0.1px rgb(12, 12, 12);
+  -webkit-text-stroke: 1px white;
+}
+
+.check-back-btn {
+  background: -webkit-linear-gradient(
+    30deg
+    ,#1eff00,#00ff00,#04f338);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.checkback-btn-div {
+  font-size: 50px;
+  text-align: center;
+}
+
+.checkback-btn-div:hover {
+  text-shadow: 0.1px 0.1px 0.1px rgb(227, 252, 4);
 }

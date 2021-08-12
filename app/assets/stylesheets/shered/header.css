@@ -41,3 +41,11 @@ nav{
 .show:hover {
   text-shadow: 1px 1px 1px rgb(233, 11, 203);
 }
+
+.app-title {
+  background: -webkit-linear-gradient(
+30deg
+,#0747e9,#e709c2,#f12d06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

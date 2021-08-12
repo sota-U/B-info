@@ -54,6 +54,8 @@
   font-size: 30px;
   white-space: pre-line;
   padding-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .tweet-show-end {
@@ -82,8 +84,62 @@
 .tweetback-btn-div {
   margin-right: 30px;
   font-size: 20px;
+  background: -webkit-linear-gradient(
+30deg
+,#ea00ff,#e91a1a,#0414f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .tweetback-btn-div:hover {
-  text-shadow: 1px 1px 1px rgb(217, 255, 1);
+  text-shadow: 0.01px 0.01px 0.01px rgb(217, 255, 1);
+}
+
+.container {
+  text-align: center;
+}
+
+.comments {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.comment-form {
+  background: rgba(0,0,0,0.3);
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgb(218, 18, 18);
+  -webkit-transition: box-shadow .5s ease;
+  -moz-transition: box-shadow .5s ease;
+  -o-transition: box-shadow .5s ease;
+  -ms-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+  resize: none;
+}
+
+.comment-btn-none {
+  display: none;
+}
+
+.comment-btn {
+  background: -webkit-linear-gradient(
+30deg
+,#ee0707,#e91a1a,#f12d06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.comment-btn:hover {
+  text-shadow: 0.01px 0.01px 0.01px rgb(11, 233, 59);
+}
+
+.comment-font {
+  color: white;
 }

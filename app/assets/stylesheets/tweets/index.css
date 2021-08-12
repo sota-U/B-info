@@ -1,11 +1,12 @@
 .main {
   margin: 0;
-  padding: 70px 100px 500px 0;
+  padding: 70px 100px 700px 0;
   font-family: Teko;
-  background-image: url('harden.gif');
+  background-image: url(/images/harden.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   width: 1450px;
 }
 
