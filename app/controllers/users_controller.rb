@@ -2,8 +2,14 @@ class UsersController < ApplicationController
   before_action :authenticate_user!, only: [:edit, :update, :check, :destroy]
   before_action :set_user, only: [:show, :edit, :update, :check, :destroy]
   before_action :user_check, only: [:edit, :update, :check, :destroy]
+
+  
   def show
-    @tweets = @user.tweets.order(created_at: :DESC)
+    if user_signed_in?
+      @tweets = @user.tweets.order(created_at: :DESC)
+    else
+      redirect_to new_user_session_path
+    end
   end
 
   def edit

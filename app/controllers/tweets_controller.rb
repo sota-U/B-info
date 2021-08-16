@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create,  :edit, :update, :destroy]
   before_action :set_tweet, only: [:show,:edit, :update, :destroy]
   before_action :user_check, only: [:edit, :update, :destroy]
 
@@ -21,8 +21,12 @@ class TweetsController < ApplicationController
   end
 
   def show
-    @comment = Comment.new
-    @comments = @tweet.comments.includes(:user)
+    if user_signed_in?
+      @comment = Comment.new
+      @comments = @tweet.comments.includes(:user)
+    else
+      redirect_to new_user_session_path
+    end
   end
 
   def edit
