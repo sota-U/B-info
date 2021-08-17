@@ -63,12 +63,12 @@ Pass: 2222
 
 ・ログイン、新規登録を右上のリンクから行います。
 
-![125523c95dbaac8b92213f7d599dc46d (1) (3)](https://user-images.githubusercontent.com/86213526/129694864-095f75d5-d4c7-4dad-9059-4ff80a16c1d4.gif)
-
+![125523c95dbaac8b92213f7d599dc46d (3)-min](https://user-images.githubusercontent.com/86213526/129703643-852f8a54-be5d-4074-b20b-9ff2794e24ba.gif)
 
 ・実際の新規登録の様子
 
-![bbbbbb (1)-min](https://user-images.githubusercontent.com/86213526/129700796-f872624c-918a-469d-be52-fb4fb684ab56.gif)
+![c1f1bdf5c76b371b4e7b7bdc38a27477-min](https://user-images.githubusercontent.com/86213526/129704212-71eb622f-b12a-4990-9fbc-e8d87fdcb413.gif)
+
 
 ・実際のログインの様子
 
