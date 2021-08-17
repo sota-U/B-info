@@ -63,7 +63,8 @@ Pass: 2222
 
 ・ログイン、新規登録を右上のリンクから行います。
 
-[![Image from Gyazo](https://i.gyazo.com/125523c95dbaac8b92213f7d599dc46d.gif)](https://gyazo.com/125523c95dbaac8b92213f7d599dc46d)
+![125523c95dbaac8b92213f7d599dc46d (1) (3)](https://user-images.githubusercontent.com/86213526/129694864-095f75d5-d4c7-4dad-9059-4ff80a16c1d4.gif)
+
 
 ・実際の新規登録の様子
 
