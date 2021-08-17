@@ -59,7 +59,7 @@ Pass: 2222
 ## -実装した機能に関して-
 ・トップページは情報一覧ページになっています。
 
-![Image from Gyazo](https://i.gyazo.com/66afa1aaa4a98f93905a86d4dfbf79a7.gif)
+![aaaaaaaa](https://user-images.githubusercontent.com/86213526/129698987-8125afee-cfde-42bf-8322-ec896d90163b.gif)
 
 ・ログイン、新規登録を右上のリンクから行います。
 
@@ -68,7 +68,7 @@ Pass: 2222
 
 ・実際の新規登録の様子
 
-[![Image from Gyazo](https://i.gyazo.com/c1f1bdf5c76b371b4e7b7bdc38a27477.gif)](https://gyazo.com/c1f1bdf5c76b371b4e7b7bdc38a27477)
+![bbbbbb (1)-min](https://user-images.githubusercontent.com/86213526/129700796-f872624c-918a-469d-be52-fb4fb684ab56.gif)
 
 ・実際のログインの様子
 
