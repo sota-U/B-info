@@ -72,19 +72,20 @@ Pass: 2222
 
 ・実際のログインの様子
 
-[![Image from Gyazo](https://i.gyazo.com/c9cfcc64f4d0651a2cd3d50c2aa0eeb0.gif)](https://gyazo.com/c9cfcc64f4d0651a2cd3d50c2aa0eeb0)
+![c9cfcc64f4d0651a2cd3d50c2aa0eeb0](https://user-images.githubusercontent.com/86213526/129701677-3fe6300f-b443-4a72-9a05-a4f28e8da18d.gif)
 
 ・情報投稿の様子(ヘッダーのPOSTリンクから行えます。)
 
-[![Image from Gyazo](https://i.gyazo.com/6d2bf196d1bf3c0948fa7255a7f11b9d.gif)](https://gyazo.com/6d2bf196d1bf3c0948fa7255a7f11b9d)
+![6d2bf196d1bf3c0948fa7255a7f11b9d](https://user-images.githubusercontent.com/86213526/129701816-1c76b0f1-67c5-4b33-aeef-4f00f50ba1e9.gif)
 
 ・情報詳細への遷移の様子(本人)
 
-[![Image from Gyazo](https://i.gyazo.com/d0bd5a4aa1add76d6113f05173049aed.gif)](https://gyazo.com/d0bd5a4aa1add76d6113f05173049aed)
+![d0bd5a4aa1add76d6113f05173049aed](https://user-images.githubusercontent.com/86213526/129702055-1e30ea04-4d5c-4a43-afbb-180915866f24.gif)
+
 
 ・情報詳細への遷移の様子(他のユーザー)
 
-[![Image from Gyazo](https://i.gyazo.com/f94b3e68bdf42cdd06c0e7a0c9ef3b7e.gif)](https://gyazo.com/f94b3e68bdf42cdd06c0e7a0c9ef3b7e)
+![f94b3e68bdf42cdd06c0e7a0c9ef3b7e](https://user-images.githubusercontent.com/86213526/129702205-fb7d4d53-222a-448e-a6d1-fb9623a12367.gif)
 
 ・情報編集画面への遷移
 
@@ -92,7 +93,8 @@ Pass: 2222
 
 ・情報削除の様子
 
-[![Image from Gyazo](https://i.gyazo.com/2da9bc12009f76bc716496d7347888c2.gif)](https://gyazo.com/2da9bc12009f76bc716496d7347888c2)
+![2da9bc12009f76bc716496d7347888c2](https://user-images.githubusercontent.com/86213526/129702422-2012a6dc-ea66-40ff-8f7b-c757a8578e3c.gif)
+
 
 ・コメント投稿の様子
 
