@@ -1,0 +1,6 @@
+<%= form_with(model: [tweet, comment], url: tweet_comments_path(@tweet) ) do |f| %>
+  <div class="comment-form-design">
+    <div><%= f.text_area :text, class: "input-mysize" %></div>
+    <div class="comment-send-btn"><%= f.submit "送信", class: "btn btn-outline-dark comment-submit float-right" %></div>
+  </div>
+<% end %>

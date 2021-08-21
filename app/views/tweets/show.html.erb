@@ -9,7 +9,7 @@
   </div>
   <div class="show-tweet-contents">
     <div class="show-tweet-title">
-      <%= ">>#{@tweet.title}<<"%>
+      <%= "＞＞#{@tweet.title}＜＜"%>
     </div>
   </div>
   <div class="content-line">
@@ -64,22 +64,14 @@
   <div class="content-line">
   :::::::::::::::::::::::::::::::::::::::USERS-COMMENT::::::::::::::::::::::::::::::::::::::::
   </div>
-  <div class="container">
+  <div class="row">
     <% if user_signed_in? %>
-      <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "コメントする", rows: "2", class:"comment-form" %>
-        <div><label class="comment-btn">>>SEND<<<%= form.submit "SEND",class:"comment-btn-none"%></label></div>
-      <% end %>
-    <% else %>
-      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+      <div class="comment-create">
+        <%= render partial: 'comments/form', locals: { comment: @comment, tweet: @tweet } %>
+      </div>
     <% end %>
-  </div>
-  <div class="comments">
-    <% @comments.each do |comment| %>
-      <p>
-        <strong><%= link_to ":#{comment.user.nickname}", "/users/#{comment.user_id}" %>：</strong>
-        <div class="comment-font"><%= ">>#{comment.text}" %></div>
-      </p>
-    <% end %>
+    <div id="comments_area">
+        <%= render partial: 'comments/index', locals: { comments: @comments } %>
+    </div>
   </div>
 </div>

@@ -1,8 +1,18 @@
 class CommentsController < ApplicationController
 
   def create
-    comment = Comment.create(comment_params)
-    redirect_to "/tweets/#{comment.tweet.id}"  # コメントと結びつくツイートの詳細画面に遷移する
+    @tweet = Tweet.find(params[:tweet_id])
+    #投稿に紐づいたコメントを作成
+    @comment = @tweet.comments.build(comment_params)
+    @comment.user_id = current_user.id
+    @comment.save
+    render :index
+  end
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+    render :index
   end
 
   private

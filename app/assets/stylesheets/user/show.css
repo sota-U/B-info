@@ -17,6 +17,7 @@
   justify-content: space-between;
   overflow-y: scroll; 
   min-height: 1000px;
+  font-family: Teko;
 }
 
 
@@ -25,13 +26,14 @@
   line-height: 1.6;
     background: -webkit-linear-gradient(
 30deg
-,#07e9a5,#09e766,#f106aa);
+,#07e9a5,#09e7c9,#06f1b6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   padding: 50px 0 0 100px;
   font-size: 70px;
   position: fixed;
   height: auto;
+  font-family: Teko;
 }
 
 .user-info {
@@ -42,22 +44,31 @@
   height: auto;
   width: 480px;
   overflow-y: scroll; 
+  font-family: Teko;
 }
 
 .user-nickname {
   padding-bottom: 30px;
-  color: white;
+  background: -webkit-linear-gradient(
+    30deg
+    ,#f804f8,#eb0909,#f106dd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .user-birthday {
   padding-bottom: 30px;
-  color: white;
+  background: -webkit-linear-gradient(
+    30deg
+    ,#f804f8,#eb0909,#d606f1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
 .user-profile {
   font-size: 13px;
   white-space: pre-line;
-
+  font-family: Teko;
 }
 
 .showbtn-flex {
@@ -69,13 +80,13 @@
   font-size: 25px;
   background: -webkit-linear-gradient(
     30deg
-    ,#6450bd,#89eb09,#f106f1);
+    ,#04f8af,#09ebeb,#06f17b);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
-.user-edit-info:hover {
-  text-shadow: 0.4px 0.4px 1px rgb(233, 11, 203);
-  transition: .4s;
+.user-edit-btn:hover {
+  text-shadow: 0.01px 0.01px 0.01px rgb(233, 11, 203);
+  transition: 0.01s;
 }
 
 
@@ -89,7 +100,7 @@
 .user-contents-title {
   background: -webkit-linear-gradient(
     30deg
-    ,#6450bd,#eb7609,#f106f1);
+    ,#6450bd,#09ebcd,#f106f1);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
   text-align: center;
@@ -115,9 +126,17 @@
 }
 
 
-.showtweet-images {
+.showimages {
   display: flex;
   justify-content: center;
+  transition-duration: 0.2s;
+  border-radius: 10%;
+  height: auto;
+}
+
+.showimages:hover {
+  transform: scale(1.03);
+  transition-duration: 0.2s;
 }
 
 
@@ -125,7 +144,7 @@
   font-size: 25px;
   background: -webkit-linear-gradient(
     30deg
-    ,#3104fa,#eb0909,#f106f1);
+    ,#04eafa,#09ebeb,#06f1f1);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
   padding-right: 10px;

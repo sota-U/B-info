@@ -1,7 +1,7 @@
 
 
 .swiper-container {
-  background-color: black;
+  background-color: red;
   display: flex;
   justify-content: center;
   width: 1400px;
@@ -24,8 +24,9 @@
 }
 
 .show-tweet {
-  background-color: black;
+  background-color: red;
   padding-bottom: 100px;
+  font-family: Teko;
 }
 
 .content-line {
@@ -97,12 +98,14 @@
 }
 
 .container {
+  display: block;
   text-align: center;
 }
 
-.comments {
-  margin-left: 300px;
-  margin-right: 300px;
+.comment-text {
+  display: block;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .comment-form {
@@ -142,4 +145,32 @@
 
 .comment-font {
   color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form-design {
+  display: block;
+  justify-content: center;
+}
+
+.input-mysize {
+  margin-left: 650px;
+}
+
+.comment-send-btn {
+  margin-right: 719px;
+}
+
+.comment-number {
+  margin-left: 200px;
+}
+
+.comment-more {
+  margin-top: 30px;
+  margin-left: 196px;
+  cursor : pointer;
 }

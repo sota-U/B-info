@@ -38,6 +38,18 @@ nav{
   color: aliceblue;
 }
 
+.user-info-list {
+  color: aqua;
+}
+
+.user-logout-list {
+  color: aqua;
+}
+
+.user-post-list {
+  color: aqua;
+}
+
 .show:hover {
   text-shadow: 1px 1px 1px rgb(233, 11, 203);
 }
@@ -45,7 +57,7 @@ nav{
 .app-title {
   background: -webkit-linear-gradient(
 30deg
-,#0747e9,#e709c2,#f12d06);
+,#40eee5,#09e7e7,#06f1f1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

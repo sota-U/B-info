@@ -17,7 +17,7 @@
     <div class="showbtn-flex">
     <% if current_user.id == @user.id %>
       <div class="user-edit-info">
-        <%= link_to '<<EDIT>>', edit_user_path(@user.id), class: 'edit' %>
+        <%= link_to '<<EDIT>>', edit_user_path(@user.id), class: 'user-edit-btn' %>
       </div>
     <% end %>
       <div class="userback-btn-div"><%=link_to '>>EXIT<<', root_path, class:"user-back-btn" %></div>
@@ -66,6 +66,4 @@
       <% end %>
     </ul>
   <div>
-
-
 </div>
