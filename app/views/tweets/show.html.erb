@@ -9,7 +9,7 @@
   </div>
   <div class="show-tweet-contents">
     <div class="show-tweet-title">
-      <%= "＞＞#{@tweet.title}＜＜"%>
+      <%= "#{@tweet.title}"%>
     </div>
   </div>
   <div class="content-line">
@@ -54,12 +54,15 @@
       <% end %>
       <div class="tweetback-btn-div"><%=link_to '>>EXIT<<', root_path, class:"user-back-btn" %></div>
       <% if current_user.id == @tweet.user_id%>
-      <div class="tweetdelete-btn-div"><%= link_to '>>DELETE<<', tweet_path(@tweet.id), method: :DELETE, data: { confirm: '削除しますか？' } %></div>
+      <div class="tweetdelete-btn-div"><%= link_to '>>DELETE<<', tweet_path(@tweet.id), method: :DELETE, data: { confirm: '削除しますか？' }, class:"tweet-delete-btn" %></div>
       <% end %>
     </div>
   </div>
   <div class="content-line">
   ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+  </div>
+  <div id="index_like_<%= @tweet.id %>" class="likes-view">
+    <%= render 'likes/like', tweet: @tweet %>
   </div>
   <div class="content-line">
   :::::::::::::::::::::::::::::::::::::::USERS-COMMENT::::::::::::::::::::::::::::::::::::::::

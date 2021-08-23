@@ -47,7 +47,7 @@
         <li class="list">
           <div class="showtweet-info">
             <div class="showtweet-title">
-              <%= link_to ":#{tweet.title}:", tweet_path(tweet.id) %>
+              <%= link_to ":#{tweet.title}:", tweet_path(tweet.id), class:"showtweet-title2" %>
             </div>
           </div>
           <div class="showtweet-image-content">
@@ -55,11 +55,6 @@
               <% if tweet.images.count > 0  %>
                 <div><%= link_to image_tag(tweet.images.first, :size => '800x800' ,class:'showimages'), tweet_path(tweet.id)  %></div>
               <% end %>
-            </div>
-          </div>
-          <div class="showtweet-user-name">
-            <div class="showuser-name">
-            <%= "from :#{tweet.user.nickname}:" %>
             </div>
           </div>
         </li>

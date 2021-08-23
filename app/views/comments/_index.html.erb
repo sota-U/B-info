@@ -1,13 +1,13 @@
 <!-- コメント内容(２件) ------------------------------------------------------------------>
-<div class="comment-number"><%= comments.count %>件コメント</div>
+<div class="comment-number"><%= "-#{comments.count}"%>件コメント-</div>
 <div class="comment-more"><h6 class="more" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">もっと見る....</h6></div>
 <% comments.first(2).each do |comment| %>
   <% unless comment.id.nil? %>
         <div class="comment-box">
             <div class="comment-text">
-                <p><%= link_to "@#{comment.user.nickname}", user_path(comment.user_id) %></p>
+                <div class="comment-user-name"><%= link_to "@#{comment.user.nickname}", user_path(comment.user_id) %></div>
                 <div class="comment-entry">
-                    <%= comment.text %>
+                    <%= ">>#{comment.text}" %>
                     <% if comment.user == current_user %>
                         <%= link_to tweet_comment_path(comment.tweet_id, comment.id), method: :delete, remote: true, class: "comment_destroy" do %>
                             <i class="fas fa-trash" style="color: black;"></i>
@@ -27,9 +27,9 @@
               <% unless comment.id.nil? %>
                     <div class="comment-box">
                         <div class="comment-text">
-                            <p><%= link_to "@#{comment.user.nickname}", user_path(comment.user_id) %></p>
+                            <div class="comment-user-name"><%= link_to "@#{comment.user.nickname}", user_path(comment.user_id) %></div>
                             <div class="comment-entry">
-                                <%= comment.text %>
+                                <%= ">>#{comment.text}" %>
                                 <% if comment.user == current_user %>
                                     <%= link_to tweet_comment_path(comment.tweet_id, comment.id), method: :delete, remote: true, class: "comment_destroy" do %>
                                         <i class="fas fa-trash" style="color: black;"></i>

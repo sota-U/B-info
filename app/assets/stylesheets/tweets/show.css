@@ -1,7 +1,7 @@
 
 
 .swiper-container {
-  background-color: red;
+  background-color: black;
   display: flex;
   justify-content: center;
   width: 1400px;
@@ -24,9 +24,10 @@
 }
 
 .show-tweet {
-  background-color: red;
+  background-color: black;
   padding-bottom: 100px;
   font-family: Teko;
+  background-size: cover;
 }
 
 .content-line {
@@ -79,7 +80,7 @@
 }
 .tweet-edit-btn:hover {
   text-shadow: 1px 1px 1px rgb(217, 255, 1);
-  transition: 0.4;
+  text-decoration: none !important;
 }
 
 .tweetback-btn-div {
@@ -95,6 +96,35 @@
 
 .tweetback-btn-div:hover {
   text-shadow: 0.01px 0.01px 0.01px rgb(217, 255, 1);
+  text-decoration: none !important;
+}
+
+.tweetdelete-btn-div {
+  margin-right: 30px;
+  font-size: 20px;
+  background: -webkit-linear-gradient(
+30deg
+,#2ce7e7,#1ae977,#24baf5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+.tweetdelete-btn-div:hover {
+  text-shadow: 0.01px 0.01px 0.01px rgb(255, 1, 1);
+  text-decoration: none !important;
+}
+
+.tweet-edit-link:hover {
+  text-decoration: none;
+}
+
+.user-back-btn:hover {
+  text-decoration: none;
+}
+
+.tweet-delete-btn:hover{
+  text-decoration: none;
 }
 
 .container {
@@ -159,18 +189,66 @@
 
 .input-mysize {
   margin-left: 650px;
+  background: rgba(0,0,0,0.3);
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgb(18, 145, 218);
+  -webkit-transition: box-shadow .5s ease;
+  -moz-transition: box-shadow .5s ease;
+  -o-transition: box-shadow .5s ease;
+  -ms-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+  resize: none;
 }
 
-.comment-send-btn {
-  margin-right: 719px;
-}
+
 
 .comment-number {
   margin-left: 200px;
+  color: #fff;
 }
 
 .comment-more {
   margin-top: 30px;
   margin-left: 196px;
   cursor : pointer;
+  color:#fff;
+}
+
+.comment-more:hover {
+  color: aqua;
+}
+
+.comment-btn-select-view {
+  display: none;
+}
+
+.comment-send-btn-view {
+  margin-left: 690px;
+  cursor : pointer;
+  color: white;
+}
+
+.comment-send-btn-view:hover {
+  color: #f12d06;
+}
+
+.comment-box {
+  color: white;
+  text-shadow: none !important;
+}
+
+.comment-user-name {
+  margin-top: 20px;
+}
+
+.likes-view {
+  margin-left: 100px;
+  color: white;
 }

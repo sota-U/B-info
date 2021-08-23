@@ -9,7 +9,6 @@
 
 
 body {
-  font-family: Teko;
   margin: 0;
   padding: 0;
 }
@@ -20,6 +19,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 0 150px 0;
+  font-family: Teko;
 }
 .form-text-wrap {
   display: block;
@@ -180,3 +180,4 @@ body {
 .register-btn {
   text-align: center;
 }
+

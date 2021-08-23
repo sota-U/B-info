@@ -42,12 +42,32 @@ nav{
   color: aqua;
 }
 
+.user-info-list:hover {
+  text-decoration: none;
+}
+
 .user-logout-list {
   color: aqua;
 }
 
+.user-logout-list:hover {
+  text-decoration: none;
+}
+
 .user-post-list {
   color: aqua;
+}
+
+.user-post-list:hover {
+  text-decoration: none;
+}
+
+.user-login-list:hover {
+  text-decoration: none;
+}
+
+.user-sign-up-list:hover {
+  text-decoration: none;
 }
 
 .show:hover {
@@ -61,3 +81,4 @@ nav{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+

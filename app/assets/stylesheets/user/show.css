@@ -89,6 +89,10 @@
   transition: 0.01s;
 }
 
+.user-edit-btn:hover {
+  text-decoration: none;
+}
+
 
 .user-tweets {
   height: auto;
@@ -125,13 +129,19 @@
   text-align: center;
 }
 
+.showtweet-title2:hover {
+  text-decoration: none;
+}
+
 
 .showimages {
   display: flex;
   justify-content: center;
   transition-duration: 0.2s;
-  border-radius: 10%;
+  border-radius: 20%;
   height: auto;
+  max-height: 900px;
+  margin-left: 30px;
 }
 
 .showimages:hover {

@@ -76,3 +76,11 @@
 .checkback-btn-div:hover {
   text-shadow: 0.1px 0.1px 0.1px rgb(227, 252, 4);
 }
+
+.check-back-btn:hover {
+  text-decoration: none;
+}
+
+.user-delete-last:hover{
+  text-decoration: none;
+}

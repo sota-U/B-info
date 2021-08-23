@@ -28,11 +28,13 @@
             <div class="user-name">
             <%= link_to ":from#{tweet.user.nickname}:", user_path(tweet.user_id), class: "user-show"%>
             </div>
+            <div id="index_like_<%= tweet.id %>">
+              <%= render 'likes/like', tweet: tweet %>
+            </div>
           </div>
         </li>
       <% end %>
     </ul>
   </div>
 </div>
-
 

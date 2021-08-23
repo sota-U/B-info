@@ -20,5 +20,11 @@ class User < ApplicationRecord
   has_many :tweets, :dependent => :destroy
   has_many_attached :images, :dependent => :destroy
   has_many :comments, :dependent => :destroy
+  has_many :likes, :dependent => :destroy
+
+
+  def already_liked?(tweet)
+    self.likes.exists?(tweet_id: tweet.id)
+  end
 end
 
