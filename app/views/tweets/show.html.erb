@@ -62,7 +62,7 @@
   ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
   </div>
   <div id="index_like_<%= @tweet.id %>" class="likes-view">
-    <%= render 'likes/like', tweet: @tweet %>
+    <div class="likes-title">like>></div><div><%= render 'likes/like', tweet: @tweet %></div>
   </div>
   <div class="content-line">
   :::::::::::::::::::::::::::::::::::::::USERS-COMMENT::::::::::::::::::::::::::::::::::::::::
