@@ -252,14 +252,21 @@
   margin-left: 100px;
   color: white;
   font-size: 30px;
-}
-
-.likes-view {
-  display: flex;
   
 }
+
+.likes-view::before {
+  content:"\f004";
+  font-family: "Font Awesome 6 Free";
+}
+
+
 
 .likes-title {
   margin-top: 0.7px;
   color: red;
+}
+
+.tweet-show-userinfo {
+  
 }
