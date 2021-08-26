@@ -266,11 +266,22 @@
   font-size: 50px;
 }
 
-
+.tweet-likes-title2 {
+  text-align: center;
+  margin-right: 80px;
+  font-size: 50px;
+  color: red;
+}
 
 .tweet-likes-count {
   margin-left: 63px;
   font-size: 80px;
+}
+
+.tweet-likes-count2 {
+  margin-left: 63px;
+  font-size: 80px;
+  color: red;
 }
 
 .tweet-likes-link:hover {
