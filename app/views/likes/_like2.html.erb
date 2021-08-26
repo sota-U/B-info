@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+    <% if current_user.already_liked?(tweet) %>
+        <%= link_to tweet_likes_path(tweet), method: :delete, class:"tweet-likes-link", remote: true do %>
+                <div class="tweet-likes-title">>>likes<<</div>
+                <div class="tweet-likes-count"><%= tweet.likes.count %></div>
+        <% end %>
+    <% else %>
+        <%= link_to tweet_likes_path(tweet), method: :post, class:"tweet-likes-link", remote: true do %>
+                <div class="tweet-likes-title">>>likes<<</div>
+                <div class="tweet-likes-count"><%= tweet.likes.count %></div>
+        <% end %>
+    <% end %>
+<% else %>
+            <%= tweet.likes.count %>
+<% end %>

@@ -255,15 +255,24 @@
   
 }
 
-.likes-view::before {
-  content:"\f004";
-  font-family: "Font Awesome 6 Free";
-}
-
-
-
 .likes-title {
   margin-top: 0.7px;
   color: red;
 }
 
+.tweet-likes-title {
+  text-align: center;
+  margin-right: 80px;
+  font-size: 50px;
+}
+
+
+
+.tweet-likes-count {
+  margin-left: 63px;
+  font-size: 80px;
+}
+
+.tweet-likes-link:hover {
+  text-decoration: none;
+}
