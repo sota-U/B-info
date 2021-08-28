@@ -1,6 +1,9 @@
 .main {
   margin: 0;
-  padding: 70px 100px 700px 0;
+  padding-top: 70px ;
+  padding-bottom: 700px;
+  padding-right: auto;
+  padding-left: auto;
   font-family: Teko;
   background-image: url(/images/harden.gif);
   background-size: cover;
@@ -8,6 +11,7 @@
   background-attachment: fixed;
   background-position: center;
   width: 1450px;
+  min-width: 100%;
 }
 
 .content {
@@ -16,9 +20,11 @@
   padding: 0 40px;
   animation-name: fadeIn ;
   animation-duration: 1.4s;
-  width: 100%;
+  width: auto;
   height: auto;
 }
+
+
 .list-name {
   font-size: 70px;
   color: aqua;
@@ -74,4 +80,14 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 1000px) {
+  .images-view {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 
