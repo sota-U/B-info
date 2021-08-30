@@ -116,3 +116,10 @@
   transition: box-shadow .5s ease;
   resize: none;
 }
+
+@media (max-width: 1000px) {
+  .login-form {
+    background-image: url("kobe2.jpeg");
+  }
+}
+
