@@ -50,6 +50,7 @@
     <div id="show_like_<%= @tweet.id %>" class="likes-view">
       <%= render 'likes/like2', tweet: @tweet %>
     </div>
+    
     <div>
       <% if current_user.id == @tweet.user_id%>
         <div class="tweet-edit-btn">

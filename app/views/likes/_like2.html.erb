@@ -4,11 +4,13 @@
                 <div class="tweet-likes-title2">>>likes<<</div>
                 <div class="tweet-likes-count2"><%= tweet.likes.count %></div>
         <% end %>
+        <%= link_to "Liked user", tweet_likes_path(@tweet.id), class: "tweet-like-user-link"%>
     <% else %>
         <%= link_to tweet_likes_path(tweet), method: :post, class:"tweet-likes-link", remote: true do %>
                 <div class="tweet-likes-title">>>likes<<</div>
                 <div class="tweet-likes-count"><%= tweet.likes.count %></div>
         <% end %>
+        <%= link_to "Liked user", tweet_likes_path(@tweet.id), class: "tweet-like-user-link"%>
     <% end %>
 <% else %>
             <%= tweet.likes.count %>

@@ -287,3 +287,7 @@
 .tweet-likes-link:hover {
   text-decoration: none;
 }
+
+.tweet-like-user-link {
+  margin-left: 27px;
+}

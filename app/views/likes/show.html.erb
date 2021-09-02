@@ -1,0 +1,11 @@
+<div class="tweet-like-users">
+  <%= "likes-users"%>
+  <% @likes.each do |like| %>
+    <li class="like-user-name">
+      <div class="like-user-name-div">
+          <%= link_to "#{like.user.nickname}:", user_path(like.user_id), class: "likes-user-show-link"%>
+      </div>
+    </li>
+  <% end %>
+
+</div>

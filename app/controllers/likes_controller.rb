@@ -6,6 +6,10 @@ class LikesController < ApplicationController
     like.save
   end
 
+  def show
+    @likes = Like.all
+  end
+
   def destroy
     @like = Like.find_by(user_id: current_user.id, tweet_id: @tweet.id).destroy
   end
